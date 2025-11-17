@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mi Empresa | Contacto</title>
+  <link rel="stylesheet" href="contacto.css">
+</head>
+<body>
+
+  <header>
+    <nav class="navbar">
+      <div class="logo">MiEmpresa</div>
+      <ul class="nav-links">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="servicios.html">Servicios</a></li>
+        <li><a href="contacto.html" class="active">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- INTRO -->
+    <section class="contact-intro fade-in">
+      <h1>Contáctanos</h1>
+      <p>Estamos aquí para ayudarte. Cuéntanos tus necesidades o solicita una cotización sin compromiso.</p>
+    </section>
+
+    <!-- FORMULARIO -->
+    <section id="contacto" class="contact-section fade-in">
+    <div class="container">
+        <h2>Contacto</h2>
+        <p>Completa el formulario y me pondré en contacto contigo lo antes posible.</p>
+
+        <form id="contactForm" class="contact-form">
+
+            <div class="form-group">
+                <label for="name">Nombre y Apellidos</label>
+                <input type="text" id="name" required placeholder="Tu nombre completo">
+            </div>
+
+            <div class="form-group">
+                <label for="email">Correo Electrónico</label>
+                <input type="email" id="email" required placeholder="ejemplo@correo.com">
+            </div>
+
+            <div class="form-group">
+                <label for="phone">Número de Teléfono</label>
+                <input type="tel" id="phone" required pattern="[0-9+ ]{6,}" placeholder="+51 999 999 999">
+            </div>
+
+            <div class="form-group">
+                <label for="subject">Asunto</label>
+                <input type="text" id="subject" required placeholder="Motivo del mensaje">
+            </div>
+
+            <div class="form-group">
+                <label for="service">Tipo de servicio</label>
+                <select id="service" required>
+                    <option value="">Selecciona una opción</option>
+                    <option value="soporte">Soporte Técnico</option>
+                    <option value="mantenimiento">Mantenimiento Preventivo</option>
+                    <option value="web">Desarrollo Web</option>
+                    <option value="infraestructura">Infraestructura / Redes</option>
+                    <option value="otro">Otro</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="message">Mensaje</label>
+                <textarea id="message" rows="6" required placeholder="Escribe tu mensaje aquí..."></textarea>
+            </div>
+
+            <button type="submit" class="btn-send">Enviar Mensaje</button>
+
+            <p id="formMsg" class="form-msg"></p>
+        </form>
+    </div>
+</section>
+
+
+        <div class="contact-info">
+          <h3>Información de Contacto</h3>
+          <ul>
+            <li>📍 <strong>Dirección:</strong> Av. Los Innovadores 123, Lima, Perú</li>
+            <li>📞 <strong>Teléfono:</strong> +51 999 888 777</li>
+            <li>📧 <strong>Correo:</strong> contacto@miempresa.com</li>
+            <li>🕒 <strong>Horario:</strong> Lunes a Viernes - 9:00 a 18:00</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- MAPA -->
+    <section class="map-section fade-in">
+      <h2>Nuestra Ubicación</h2>
+      <div class="map-container">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3900.836744529601!2d-77.0428!3d-12.0464!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c8c2a2a2c2cf%3A0x2c15bcedb69c8e1d!2sLima%2C%20Per%C3%BA!5e0!3m2!1ses-419!2spe!4v1700000000000"
+          width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy">
+        </iframe>
+      </div>
+    </section>
+
+    <!-- CTA FINAL -->
+    <section class="cta fade-in">
+      <h2>¿Listo para empezar tu proyecto?</h2>
+      <a href="mailto:contacto@miempresa.com" class="btn">Escríbenos ahora</a>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>© 2025 MiEmpresa | Todos los derechos reservados</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

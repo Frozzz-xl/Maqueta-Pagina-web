@@ -1,0 +1,287 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* GENERAL */
+body {
+  font-family: "Poppins", sans-serif;
+  color: #333;
+  background: #fdfdfd;
+  line-height: 1.6;
+}
+
+header {
+  background: #fff;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar {
+  max-width: 1100px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #0078ff;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+  color: #0078ff;
+}
+
+/* HERO */
+.hero {
+  text-align: center;
+  padding: 6rem 2rem;
+  background: linear-gradient(to right, #e3f2fd, #ffffff);
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+}
+
+.hero span {
+  color: #0078ff;
+}
+
+/* SECCIONES */
+section {
+  max-width: 1000px;
+  margin: auto;
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.service-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+/* FORMULARIO */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 500px;
+  margin: 2rem auto;
+}
+
+input, textarea {
+  padding: 0.8rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  outline: none;
+  transition: border 0.3s;
+}
+
+input:focus, textarea:focus {
+  border-color: #0078ff;
+}
+
+button {
+  background: #0078ff;
+  color: #fff;
+  border: none;
+  padding: 0.8rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background: #005fcc;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 1.5rem;
+  background: #fff;
+  color: #555;
+  font-size: 0.9rem;
+  margin-top: 3rem;
+}
+
+/* ANIMACIONES */
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* CONTACTO */
+/* ------- CONTACT FORM ------- */
+
+.contact-section {
+    padding: 60px 20px;
+}
+
+.contact-form {
+    max-width: 650px;
+    margin: 0 auto;
+    display: grid;
+    gap: 20px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form label {
+    margin-bottom: 8px;
+    font-weight: 500;
+}
+
+.contact-form input,
+.contact-form select,
+.contact-form textarea {
+    padding: 12px 14px;
+    border-radius: 10px;
+    border: 1.5px solid #ccc;
+    background: #f9f9f9;
+    transition: border 0.3s, box-shadow 0.3s;
+}
+
+.contact-form input:focus,
+.contact-form select:focus,
+.contact-form textarea:focus {
+    border-color: #2d89ff;
+    box-shadow: 0 0 0 3px rgba(45, 137, 255, 0.2);
+    outline: none;
+}
+
+.btn-send {
+    padding: 14px;
+    background: #2d89ff;
+    color: #fff;
+    border: none;
+    font-size: 17px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+}
+
+.btn-send:hover {
+    background: #1d6ed8;
+    transform: translateY(-2px);
+}
+
+.form-msg {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+/* Success & error */
+.success {
+    color: #0da84f;
+    animation: fadeIn 0.6s ease;
+}
+
+.error {
+    color: #ff3d3d;
+    animation: shake 0.4s ease;
+}
+
+/* Animaciones */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes shake {
+    0%, 100% { transform: translateX(0); }
+    20%, 60% { transform: translateX(-6px); }
+    40%, 80% { transform: translateX(6px); }
+}
+
+.fade-in {
+    animation: fadeIn 0.8s ease forwards;
+}
+
+.contact-info {
+  background: #f9f9f9;
+  padding: 2rem;
+  border-radius: 12px;
+  text-align: center;
+}
+
+.contact-info h3 {
+  margin-bottom: 1rem;
+}
+
+.contact-info ul {
+  list-style: none;
+  padding: 0;
+}
+
+.contact-info li {
+  margin-bottom: 0.8rem;
+}
+
+/* FORM MESSAGE */
+.form-message {
+  margin-top: 1rem;
+  font-size: 0.9rem;
+  color: #0078ff;
+}
+
+/* MAPA */
+.map-section {
+  text-align: center;
+  padding: 4rem 2rem;
+}
+
+.map-container {
+  max-width: 1000px;
+  margin: 2rem auto 0;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
